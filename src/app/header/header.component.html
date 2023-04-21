@@ -9,7 +9,7 @@
         <li routerLinkActive="active">
           <a routerLink="/recipes" *ngIf="isAuthenticated">Recipes</a>
         </li>
-        <li routerLinkActive="active">
+        <li routerLinkActive="active" *ngIf="!isAuthenticated">
           <a routerLink="/auth">Authenticate</a>
         </li>
         <li routerLinkActive="active">
